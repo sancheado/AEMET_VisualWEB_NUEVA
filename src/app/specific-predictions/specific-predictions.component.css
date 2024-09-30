@@ -1,0 +1,11 @@
+.specific-modal {
+    margin: -5.5px 10px 10px 10px;
+    padding: 5px;
+    width: 99vw;
+    height: 5vh;
+    color: #09121B;
+    align-items: end;
+    border-radius: 5px;
+    display: flex;
+    width: 99vw;
+}
