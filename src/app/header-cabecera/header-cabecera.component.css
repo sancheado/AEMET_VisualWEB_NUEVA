@@ -1,0 +1,36 @@
+.headerMain {
+    background-image: url(src/assets/img/fondo.jpg);
+    background-size: cover;
+    height: 25vh;
+    width: 99vw;
+    margin: 10px 10px;
+    padding: 5px;
+    font-weight: 500;
+
+}
+
+.body-header {
+    position: relative;
+    padding-top: 5%;
+    margin-left: 5% !important;
+    width: 90vw;
+    margin: 10px auto;
+    font-weight: 600;
+}
+
+.body-header h1 {
+    color: #fff;
+}
+
+.body-header h3 {
+    color: #000000 !important;
+}
+
+.body-header h1 span {
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+.body-header h2 {
+    font-size: 1.5rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}

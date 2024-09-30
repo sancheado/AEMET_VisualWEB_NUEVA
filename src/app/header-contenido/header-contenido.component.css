@@ -1,0 +1,36 @@
+.menuNav {
+    margin: -5.5px 10px 10px 10px;
+    padding: 5px;
+    width: 99vw;
+    height: 5vh;
+    background-color: #09121B;
+    color: #ffffff;
+    align-items: end;
+    border-radius: 5px;
+    display: flex;
+    width: 100vw;
+}
+
+cds-icon {
+    background-color: #ffffff;
+    color: #09121B;
+    border-radius: 2.5px;
+    margin-left: 5px;
+}
+
+.opc {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 16px;
+    padding: 2px;
+    margin: 2.5px 5px;
+    width: 100vw;
+}
+
+.opc a {
+    text-decoration: none;
+}
+
+.opc a:hover {
+    font-size: 17px;
+}
