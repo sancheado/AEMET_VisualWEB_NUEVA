@@ -1,11 +1,13 @@
 .specific-modal {
-    margin: -5.5px 10px 10px 10px;
+    margin-left: auto;
+    margin-right: auto;
     padding: 5px;
-    width: 99vw;
-    height: 5vh;
+    width: 98vw;
+    height: 66vh;
     color: #09121B;
     align-items: end;
     border-radius: 5px;
     display: flex;
-    width: 99vw;
+    background: #2D383C;
+    color: #FFFFFF;
 }
