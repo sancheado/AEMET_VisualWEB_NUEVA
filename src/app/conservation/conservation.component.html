@@ -1,0 +1,33 @@
+<div class="main-container specific-modal">
+    <div class="content-container" style="width: 97.5vw;">
+      <div class="content-area">
+         <ng-container *ngFor="let item of cards; let i = index" >
+           <div class="clr-row" *ngIf="i % 4 === 0">
+             <div *ngFor="let j of [0, 1, 2, 4]" class="clr-col-lg-3 clr-col-md-4 clr-col-6">
+              <ng-container  *ngIf="cards[i + j]">
+                <div class="card">
+                  <div class="card-header">
+                    <h2>
+                      {{ cards[i + j].title }}
+                    </h2>
+                  </div>
+                  <div class="card-block">
+                    <div>
+                      <span class="card-text">{{ cards[i + j].contentToChange }}</span>
+                    </div>
+                    <p>{{ cards[i + j].explication }}</p>
+                  </div>
+                  <div class="card-footer">
+                    <div class="myBtn">
+                      <button class="btn btn-warning-outline">Continuar</button>
+                    </div>
+                  </div>
+                </div>
+              </ng-container>
+             </div>
+           </div>
+         </ng-container>
+      </div>
+    </div>
+  </div>
+  

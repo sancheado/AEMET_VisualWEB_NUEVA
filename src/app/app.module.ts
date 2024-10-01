@@ -11,6 +11,8 @@ import { FormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SpecificPredictionsComponent } from './specific-predictions/specific-predictions.component';
+import { ConservationComponent } from './conservation/conservation.component';
+import { ClimatologicValuesComponent } from './climatologic-values/climatologic-values.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,6 +21,8 @@ import { SpecificPredictionsComponent } from './specific-predictions/specific-pr
     HeaderCabeceraComponent,
     HeaderContenidoComponent,
     SpecificPredictionsComponent,
+    ConservationComponent,
+    ClimatologicValuesComponent,
   ],
   imports: [
     BrowserModule,
