@@ -21,20 +21,61 @@
 }
 
 .card-header {
-    background: #F7D118;
-    color: #2D383C;
+    background: #ffd200;
+    color: #FFFFFF;
     padding: 4.5px;
     width: 105%;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     margin-left: -10px;
     margin-top: -10px;
+    height: 4.5vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card-header h2 {
+    text-align: justify;
+    margin-top: 10px;
+    font-weight: 700;
 }
 
 .card-block {
     background-color: #FFFFFF;
     color: #2D383C;
     margin-left: -10px;
+    margin-top: -10px;
     width: 105%;
-    height: 7vh;
+}
+
+.card-block div {
+    width: 98%;
+    margin: 10px auto;
+    display: flex;
+}
+
+.card-block p {
+    margin: 10px auto;
+    font-size: 1rem;
+    padding: 15px;
+}
+
+.card-text {
+    background: #5687B2;
+    color: #f9f9fa;
+    font-size: .8rem;
+    margin: 10px auto;
+}
+
+.myBtn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    background: #5687B2;
+    color: #FFFFFF;
+    border-radius: 5px;
+    width: 45%;
+    height: 3.5vh;
 }
