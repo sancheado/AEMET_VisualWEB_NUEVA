@@ -1,4 +1,3 @@
-import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -8,9 +7,10 @@ import { HomeComponent } from './home/home.component';
 import { ClarityModule } from '@clr/angular';
 import { HeaderCabeceraComponent } from './header-cabecera/header-cabecera.component';
 import { HeaderContenidoComponent } from './header-contenido/header-contenido.component';
-import { SpecificPredictionsComponent } from './specific-predictions/specific-predictions.component';
 import { FormsModule } from '@angular/forms';
-
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { SpecificPredictionsComponent } from './specific-predictions/specific-predictions.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,12 +18,14 @@ import { FormsModule } from '@angular/forms';
     HomeComponent,
     HeaderCabeceraComponent,
     HeaderContenidoComponent,
+    SpecificPredictionsComponent,
   ],
   imports: [
     BrowserModule,
     ClarityModule,
     FormsModule,
-    AppRoutingModule
+    CommonModule,
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

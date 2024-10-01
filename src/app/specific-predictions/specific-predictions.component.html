@@ -1,5 +1,49 @@
-<div class="specific-modal">
-    <div class="clr-row">
-      AAAAA
-    </div>  
+<!-- <div class="main-container specific-modal">
+  <div class="content-container" style="width: 97.5vw;">
+    <div class="content-area" *ngIf="cards">
+      <ng-container  *ngFor="let item of cards; index as i">
+        <div class="clr-row">
+          <div class="clr-col-lg-4 clr-col-md-6 clr-col-12">
+            <div class="card" style="border: 1px solid blue;">
+              <div class="card-header">
+                <h4 class="card-title">Card {{ item.title }}</h4>
+              </div>
+              <div class="card-block">
+                <p class="card-text">Content for card {{ item.content }}</p>
+              </div>
+              <div class="card-footer">
+                Footer
+              </div>
+            </div>
+          </div>
+        </div>
+      </ng-container>
+    </div>
+  </div>
+</div> -->
+<div class="main-container specific-modal">
+  <div class="content-container" style="width: 97.5vw;">
+    <div class="content-area">
+       <ng-container *ngFor="let item of cards; let i = index" >
+         <div class="clr-row" *ngIf="i % 4 === 0">
+           <!-- Mostrar tarjetas en la fila actual -->
+           <div *ngFor="let j of [0, 1, 2, 4]" class="clr-col-lg-3 clr-col-md-4 clr-col-6">
+            <ng-container  *ngIf="cards[i + j]">
+              <div class="card">
+                <div class="card-header">
+                  Card {{ cards[i + j].title }}
+                </div>
+                <div class="card-block">
+                  <p class="card-text">Content for card {{ cards[i + j].content }}</p>
+                </div>
+                <div class="card-footer">
+                  Footer
+                </div>
+              </div>
+            </ng-container>
+           </div>
+         </div>
+       </ng-container>
+    </div>
+  </div>
 </div>

@@ -4,10 +4,37 @@
     padding: 5px;
     width: 98vw;
     height: 66vh;
-    color: #09121B;
     align-items: end;
     border-radius: 5px;
     display: flex;
     background: #2D383C;
     color: #FFFFFF;
+}
+
+.card {
+    margin: 5px auto;
+    padding: 10px;
+    border-radius: 15px;
+    border: 1px solid #FFFFFF;
+    width: 22.5vw;
+    height: auto;
+}
+
+.card-header {
+    background: #F7D118;
+    color: #2D383C;
+    padding: 4.5px;
+    width: 105%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    margin-left: -10px;
+    margin-top: -10px;
+}
+
+.card-block {
+    background-color: #FFFFFF;
+    color: #2D383C;
+    margin-left: -10px;
+    width: 105%;
+    height: 7vh;
 }
