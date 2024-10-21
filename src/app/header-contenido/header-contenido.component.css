@@ -1,36 +1,70 @@
 .menuNav {
-    margin: -5.5px 10px 10px 10px;
-    padding: 5px;
-    width: 99vw;
-    height: 5vh;
+    padding: 10px;
     background-color: #09121B;
     color: #ffffff;
-    align-items: end;
-    border-radius: 5px;
     display: flex;
-    width: 99vw;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    border-radius: 5px;
+    width: 100%;
 }
 
-cds-icon {
+.menu-icon {
+    display: none;
     background-color: #ffffff;
     color: #09121B;
-    border-radius: 2.5px;
-    margin-left: 5px;
+    border-radius: 5px;
+    margin-right: 10px;
+    cursor: pointer;
 }
 
 .opc {
     display: flex;
-    justify-content: space-evenly;
-    font-size: 16px;
-    padding: 2px;
-    margin: 2.5px 5px;
-    width: 100vw;
+    justify-content: space-between;
+    flex-grow: 1;
+    flex-wrap: nowrap;
+    gap: 10px;
+    font-size: 14px;
 }
 
 .opc a {
+    color: white;
     text-decoration: none;
+    padding: 5px;
 }
 
 .opc a:hover {
-    font-size: 17px;
+    font-size: 15px;
+}
+
+/* Para pantallas pequeñas */
+@media (max-width: 1024px) {
+    .menu-icon {
+        display: block;
+        margin-right: 0;
+        /* Alinea el icono a la izquierda */
+
+    }
+
+    .opc {
+        display: none;
+        flex-direction: column;
+    }
+
+    /* Cuando el menú está expandido */
+    .menuNav.expanded {
+        flex-direction: column;
+        /* Apila los elementos verticalmente */
+        align-items: center;
+        /* Alinea los elementos al inicio */
+    }
+
+    /* Ahora mostramos las opciones en columna cuando se expande */
+    .menuNav.expanded .opc {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        /* Asegura que el menú ocupe todo el ancho */
+    }
 }

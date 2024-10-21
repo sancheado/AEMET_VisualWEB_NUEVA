@@ -1,6 +1,6 @@
 <div class="clr-row">
-    <div class="menuNav">
-        <cds-icon shape="applications" size="24"></cds-icon>
+    <div class="menuNav" [class.expanded]="isMenuHidden">
+        <cds-icon shape="applications" size="24" class="menu-icon" (click)="toggleMenu()"></cds-icon>
         <div class="opc">
             <a routerLink="/specific-predictions">Pred. Especificas</a>
             <a href="/obs-convencional">Obs. Convencional</a>
@@ -20,3 +20,4 @@
         </div>
     </div>
 </div>
+

@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./header-contenido.component.css']
 })
 export class HeaderContenidoComponent {
+  isMenuHidden = false; // Menú oculto por defecto en pantallas pequeñas
 
+  toggleMenu() {
+    console.log("entramos");
+    this.isMenuHidden = !this.isMenuHidden; // Alternar visibilidad del menú
+  }
 }
